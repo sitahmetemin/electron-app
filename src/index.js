@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu } = require("electron");
+const { app, BrowserWindow, Menu, ipcMain } = require("electron");
 const path = require("path");
 
 if (require("electron-squirrel-startup")) {
@@ -16,7 +16,7 @@ const createWindow = () => {
 
     mainWindow.loadURL(`file://${__dirname}/index.html`);
 
-    mainWindow.webContents.openDevTools();
+    // mainWindow.webContents.openDevTools();
 
     mainWindow.on("closed", () => {
         mainWindow = null;
@@ -25,6 +25,10 @@ const createWindow = () => {
     const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
 
     Menu.setApplicationMenu(mainMenu);
+
+    ipcMain.on("key", (err, data) => {
+        console.log(data);
+    })
 };
 
 const mainMenuTemplate = [
