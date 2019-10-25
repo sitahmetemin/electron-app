@@ -1,0 +1,34 @@
+body{
+    background-color: #011638 !important;
+    color:#fff !important;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-container{
+    width: 50%;
+    height: 100%;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.img-label{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    padding: 16px;
+    background-color: rgba(0,0,0,0.8);
+    margin: 0 10%;
+}
+
+.btn-close{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    z-index: 1;
+}

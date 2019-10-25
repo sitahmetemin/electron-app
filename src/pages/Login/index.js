@@ -5,34 +5,37 @@ if (require("electron-squirrel-startup")) {
     app.quit();
 }
 
-let mainWindow;
-
 const createWindow = () => {
     mainWindow = new BrowserWindow({
-        width: 1000,
-        height: 800,
-        icon: path.join(__dirname, "assets/img/icon/main.png"),
+        width: 700,
+        height: 500,
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        frame: false,
+        resizable: false,
     });
 
     mainWindow.loadURL(`file://${__dirname}/index.html`);
 
+    
+    mainWindow.removeMenu();
+    
     mainWindow.on("closed", () => {
         mainWindow = null;
     });
-
+    
+    
     const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
-
+    
     Menu.setApplicationMenu(mainMenu);
 
-    ipcMain.on("mahmut", (err, data) => {
-        console.log(data);
+    ipcMain.on("key:btnClose", () => {
+        close();
     });
 
-    ipcMain.on("key:btnOpenNewPage", () => {
-        newWindow();
+    ipcMain.on("key:btnLogin", () => {
+        goHome();
     });
 };
 
@@ -48,20 +51,6 @@ const mainMenuTemplate = [
         ]
     }
 ];
-
-app.on("ready", createWindow);
-
-app.on("window-all-closed", () => {
-    if (process.platform !== "darwin") {
-        app.quit();
-    }
-});
-
-app.on("activate", () => {
-    if (mainWindow === null) {
-        createWindow();
-    }
-});
 
 if (process.env.NODE_ENV !== "production") {
     mainMenuTemplate.push(
@@ -80,17 +69,36 @@ if (process.env.NODE_ENV !== "production") {
     );
 }
 
-const newWindow = () => {
+app.on("ready", createWindow);
+
+app.on("window-all-closed", () => {
+    if (process.platform !== "darwin") {
+        app.quit();
+    }
+});
+
+app.on("activate", () => {
+    if (mainWindow === null) {
+        createWindow();
+    }
+});
+
+const close = () => {
+    app.quit();
+    mainWindow = null;
+};
+
+const goHome = () => {
+    
     newPageWindow = new BrowserWindow({
         width: 1000,
         height: 800,
-        icon: path.join(__dirname, "assets/img/icon/main.png"),
         webPreferences: {
             nodeIntegration: true
         }
     });
 
-    newPageWindow.loadURL(`file://${__dirname}/newWindow.html`);
+    newPageWindow.loadURL(path.join(__dirname, "../Home/index.html"));
 
     newPageWindow.on("close", () => {
         newPageWindow = null;
