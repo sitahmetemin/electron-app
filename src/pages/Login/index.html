@@ -39,6 +39,7 @@
         </div>
     </div>
 
+    <script s></script>
     <script>
         const electron = require("electron");
         const remote = electron.remote;
@@ -54,7 +55,7 @@
 
         let btnLogin = document.getElementById("btnLogin");
         btnLogin.addEventListener("click", () => {
-            ipcRenderer.send("key:btnLogin")
+            ipcRenderer.send("key:btnLogin");
             var window = remote.getCurrentWindow();
             window.close();
         });

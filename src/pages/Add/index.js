@@ -5,7 +5,7 @@ if (require("electron-squirrel-startup")) {
 	app.quit();
 }
 
-const createWindow = () => {
+const createMainWindow = () => {
 	mainWindow = new BrowserWindow({
 		width: 1000,
 		height: 800,
@@ -24,9 +24,9 @@ const createWindow = () => {
 
 	Menu.setApplicationMenu(mainMenu);
 
-	ipcMain.on("createWindow", () => {
+	/*ipcMain.on("key:createWindow", () => {
 		goAddWindow();
-	});
+	});*/
 };
 
 const mainMenuTemplate = [
@@ -59,7 +59,7 @@ if (process.env.NODE_ENV !== "production") {
 	);
 }
 
-app.on("ready", createWindow);
+app.on("ready", createMainWindow);
 
 app.on("window-all-closed", () => {
 	if (process.platform !== "darwin") {
@@ -73,7 +73,7 @@ app.on("activate", () => {
 	}
 });
 
-const goAddWindow = () => {
+/*const goAddWindow = () => {
 
     newPageWindow = new BrowserWindow({
         width: 1000,
@@ -83,11 +83,9 @@ const goAddWindow = () => {
         }
     });
 
-    newPageWindow.loadURL(path.join(__dirname, "../Add/index.html"));
-
-	newPageWindow.maximize();
+    newPageWindow.loadURL(path.join(__dirname, "../Home/index.html"));
 
     newPageWindow.on("close", () => {
         newPageWindow = null;
     });
-};
+};*/
