@@ -13,7 +13,7 @@ body{
 
 .fill-image{
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .vertical-text{

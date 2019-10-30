@@ -19,441 +19,453 @@
 </head>
 
 <body>
-<div class="container-fluid">
-    <div class="row main-list overflow-auto">
-        <table class="table-content-centered tableFixHead table table-sm table-striped table-hover">
-            <thead class="thead-dark">
-            <tr>
-                <th scope="col">İşlemler</th>
-                <th scope="col">#</th>
-                <th scope="col">Ad</th>
-                <th scope="col">İkinci Ad</th>
-                <th scope="col">Soyad</th>
-                <th scope="col">Doğum Günü</th>
-                <th scope="col">Uyruk</th>
-                <th scope="col">Dosya Tipi</th>
-                <th scope="col">Dosya ID</th>
-                <th scope="col">Uygulama Tarihi</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="text-center nowrap">
-                    <button  class="btn btn-sm btn-primary ">Ekle</button>
-                    <button class="btn btn-sm btn-primary ">Güncelle</button>
-                    <button class="btn btn-sm btn-primary ">Sil</button>
-                    <button id="addFingerPrint" class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
-                    <button class="btn btn-sm btn-primary ">
-                        Biometrik Fotoğraf Ekle
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Uğur</td>
-                <td>-</td>
-                <td>Akca</td>
-                <td>23.02.2000</td>
-                <td>TR</td>
-                <td>Pasaport</td>
-                <td>654654894156</td>
-                <td>03.10.1965</td>
-            </tr>
-            <tr>
+    <div class="container-fluid">
+        <div class="row main-list overflow-auto">
+            <table class="table-content-centered tableFixHead table table-sm table-striped table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">İşlemler</th>
+                        <th scope="col">#</th>
+                        <th scope="col">Ad</th>
+                        <th scope="col">İkinci Ad</th>
+                        <th scope="col">Soyad</th>
+                        <th scope="col">Doğum Günü</th>
+                        <th scope="col">Uyruk</th>
+                        <th scope="col">Dosya Tipi</th>
+                        <th scope="col">Dosya ID</th>
+                        <th scope="col">Uygulama Tarihi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center nowrap">
+                            <button class="btn btn-sm btn-primary ">Ekle</button>
+                            <button class="btn btn-sm btn-primary ">Güncelle</button>
+                            <button class="btn btn-sm btn-primary ">Sil</button>
+                            <button id="addFingerPrint" class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
+                            <button id="showBioWindow" class="btn btn-sm btn-primary ">
+                                Biometrik Fotoğraf Ekle
+                            </button>
+                        </td>
+                        <td>1</td>
+                        <td>Uğur</td>
+                        <td>-</td>
+                        <td>Akca</td>
+                        <td>23.02.2000</td>
+                        <td>TR</td>
+                        <td>Pasaport</td>
+                        <td>654654894156</td>
+                        <td>03.10.1965</td>
+                    </tr>
+                    <tr>
 
-                <td class="text-center nowrap">
-                    <button class="btn btn-sm btn-primary ">Ekle</button>
-                    <button class="btn btn-sm btn-primary ">Güncelle</button>
-                    <button class="btn btn-sm btn-primary ">Sil</button>
-                    <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
-                    <button class="btn btn-sm btn-primary ">
-                        Biometrik Fotoğraf Ekle
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Ayşe</td>
-                <td>Fatma</td>
-                <td>Demir</td>
-                <td>06.01.1987</td>
-                <td>TR</td>
-                <td>Pasaport</td>
-                <td>6543256</td>
-                <td>12.05.1995</td>
-            </tr>
-            <tr>
+                        <td class="text-center nowrap">
+                            <button class="btn btn-sm btn-primary ">Ekle</button>
+                            <button class="btn btn-sm btn-primary ">Güncelle</button>
+                            <button class="btn btn-sm btn-primary ">Sil</button>
+                            <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
+                            <button class="btn btn-sm btn-primary ">
+                                Biometrik Fotoğraf Ekle
+                            </button>
+                        </td>
+                        <td>1</td>
+                        <td>Ayşe</td>
+                        <td>Fatma</td>
+                        <td>Demir</td>
+                        <td>06.01.1987</td>
+                        <td>TR</td>
+                        <td>Pasaport</td>
+                        <td>6543256</td>
+                        <td>12.05.1995</td>
+                    </tr>
+                    <tr>
 
-                <td class="text-center nowrap">
-                    <button class="btn btn-sm btn-primary ">Ekle</button>
-                    <button class="btn btn-sm btn-primary ">Güncelle</button>
-                    <button class="btn btn-sm btn-primary ">Sil</button>
-                    <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
-                    <button class="btn btn-sm btn-primary ">
-                        Biometrik Fotoğraf Ekle
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Ayşe</td>
-                <td>Fatma</td>
-                <td>Demir</td>
-                <td>06.01.1987</td>
-                <td>TR</td>
-                <td>Pasaport</td>
-                <td>6543256</td>
-                <td>12.05.1995</td>
-            </tr><tr>
+                        <td class="text-center nowrap">
+                            <button class="btn btn-sm btn-primary ">Ekle</button>
+                            <button class="btn btn-sm btn-primary ">Güncelle</button>
+                            <button class="btn btn-sm btn-primary ">Sil</button>
+                            <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
+                            <button class="btn btn-sm btn-primary ">
+                                Biometrik Fotoğraf Ekle
+                            </button>
+                        </td>
+                        <td>1</td>
+                        <td>Ayşe</td>
+                        <td>Fatma</td>
+                        <td>Demir</td>
+                        <td>06.01.1987</td>
+                        <td>TR</td>
+                        <td>Pasaport</td>
+                        <td>6543256</td>
+                        <td>12.05.1995</td>
+                    </tr>
+                    <tr>
 
-                <td class="text-center nowrap">
-                    <button class="btn btn-sm btn-primary ">Ekle</button>
-                    <button class="btn btn-sm btn-primary ">Güncelle</button>
-                    <button class="btn btn-sm btn-primary ">Sil</button>
-                    <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
-                    <button class="btn btn-sm btn-primary ">
-                        Biometrik Fotoğraf Ekle
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Ayşe</td>
-                <td>Fatma</td>
-                <td>Demir</td>
-                <td>06.01.1987</td>
-                <td>TR</td>
-                <td>Pasaport</td>
-                <td>6543256</td>
-                <td>12.05.1995</td>
-            </tr><tr>
+                        <td class="text-center nowrap">
+                            <button class="btn btn-sm btn-primary ">Ekle</button>
+                            <button class="btn btn-sm btn-primary ">Güncelle</button>
+                            <button class="btn btn-sm btn-primary ">Sil</button>
+                            <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
+                            <button class="btn btn-sm btn-primary ">
+                                Biometrik Fotoğraf Ekle
+                            </button>
+                        </td>
+                        <td>1</td>
+                        <td>Ayşe</td>
+                        <td>Fatma</td>
+                        <td>Demir</td>
+                        <td>06.01.1987</td>
+                        <td>TR</td>
+                        <td>Pasaport</td>
+                        <td>6543256</td>
+                        <td>12.05.1995</td>
+                    </tr>
+                    <tr>
 
-                <td class="text-center nowrap">
-                    <button class="btn btn-sm btn-primary ">Ekle</button>
-                    <button class="btn btn-sm btn-primary ">Güncelle</button>
-                    <button class="btn btn-sm btn-primary ">Sil</button>
-                    <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
-                    <button class="btn btn-sm btn-primary ">
-                        Biometrik Fotoğraf Ekle
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Ayşe</td>
-                <td>Fatma</td>
-                <td>Demir</td>
-                <td>06.01.1987</td>
-                <td>TR</td>
-                <td>Pasaport</td>
-                <td>6543256</td>
-                <td>12.05.1995</td>
-            </tr><tr>
+                        <td class="text-center nowrap">
+                            <button class="btn btn-sm btn-primary ">Ekle</button>
+                            <button class="btn btn-sm btn-primary ">Güncelle</button>
+                            <button class="btn btn-sm btn-primary ">Sil</button>
+                            <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
+                            <button class="btn btn-sm btn-primary ">
+                                Biometrik Fotoğraf Ekle
+                            </button>
+                        </td>
+                        <td>1</td>
+                        <td>Ayşe</td>
+                        <td>Fatma</td>
+                        <td>Demir</td>
+                        <td>06.01.1987</td>
+                        <td>TR</td>
+                        <td>Pasaport</td>
+                        <td>6543256</td>
+                        <td>12.05.1995</td>
+                    </tr>
+                    <tr>
 
-                <td class="text-center nowrap">
-                    <button class="btn btn-sm btn-primary ">Ekle</button>
-                    <button class="btn btn-sm btn-primary ">Güncelle</button>
-                    <button class="btn btn-sm btn-primary ">Sil</button>
-                    <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
-                    <button class="btn btn-sm btn-primary ">
-                        Biometrik Fotoğraf Ekle
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Ayşe</td>
-                <td>Fatma</td>
-                <td>Demir</td>
-                <td>06.01.1987</td>
-                <td>TR</td>
-                <td>Pasaport</td>
-                <td>6543256</td>
-                <td>12.05.1995</td>
-            </tr><tr>
+                        <td class="text-center nowrap">
+                            <button class="btn btn-sm btn-primary ">Ekle</button>
+                            <button class="btn btn-sm btn-primary ">Güncelle</button>
+                            <button class="btn btn-sm btn-primary ">Sil</button>
+                            <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
+                            <button class="btn btn-sm btn-primary ">
+                                Biometrik Fotoğraf Ekle
+                            </button>
+                        </td>
+                        <td>1</td>
+                        <td>Ayşe</td>
+                        <td>Fatma</td>
+                        <td>Demir</td>
+                        <td>06.01.1987</td>
+                        <td>TR</td>
+                        <td>Pasaport</td>
+                        <td>6543256</td>
+                        <td>12.05.1995</td>
+                    </tr>
+                    <tr>
 
-                <td class="text-center nowrap">
-                    <button class="btn btn-sm btn-primary ">Ekle</button>
-                    <button class="btn btn-sm btn-primary ">Güncelle</button>
-                    <button class="btn btn-sm btn-primary ">Sil</button>
-                    <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
-                    <button class="btn btn-sm btn-primary ">
-                        Biometrik Fotoğraf Ekle
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Ayşe</td>
-                <td>Fatma</td>
-                <td>Demir</td>
-                <td>06.01.1987</td>
-                <td>TR</td>
-                <td>Pasaport</td>
-                <td>6543256</td>
-                <td>12.05.1995</td>
-            </tr><tr>
+                        <td class="text-center nowrap">
+                            <button class="btn btn-sm btn-primary ">Ekle</button>
+                            <button class="btn btn-sm btn-primary ">Güncelle</button>
+                            <button class="btn btn-sm btn-primary ">Sil</button>
+                            <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
+                            <button class="btn btn-sm btn-primary ">
+                                Biometrik Fotoğraf Ekle
+                            </button>
+                        </td>
+                        <td>1</td>
+                        <td>Ayşe</td>
+                        <td>Fatma</td>
+                        <td>Demir</td>
+                        <td>06.01.1987</td>
+                        <td>TR</td>
+                        <td>Pasaport</td>
+                        <td>6543256</td>
+                        <td>12.05.1995</td>
+                    </tr>
+                    <tr>
 
-                <td class="text-center nowrap">
-                    <button class="btn btn-sm btn-primary ">Ekle</button>
-                    <button class="btn btn-sm btn-primary ">Güncelle</button>
-                    <button class="btn btn-sm btn-primary ">Sil</button>
-                    <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
-                    <button class="btn btn-sm btn-primary ">
-                        Biometrik Fotoğraf Ekle
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Ayşe</td>
-                <td>Fatma</td>
-                <td>Demir</td>
-                <td>06.01.1987</td>
-                <td>TR</td>
-                <td>Pasaport</td>
-                <td>6543256</td>
-                <td>12.05.1995</td>
-            </tr>
-            <tr>
+                        <td class="text-center nowrap">
+                            <button class="btn btn-sm btn-primary ">Ekle</button>
+                            <button class="btn btn-sm btn-primary ">Güncelle</button>
+                            <button class="btn btn-sm btn-primary ">Sil</button>
+                            <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
+                            <button class="btn btn-sm btn-primary ">
+                                Biometrik Fotoğraf Ekle
+                            </button>
+                        </td>
+                        <td>1</td>
+                        <td>Ayşe</td>
+                        <td>Fatma</td>
+                        <td>Demir</td>
+                        <td>06.01.1987</td>
+                        <td>TR</td>
+                        <td>Pasaport</td>
+                        <td>6543256</td>
+                        <td>12.05.1995</td>
+                    </tr>
+                    <tr>
 
-                <td class="text-center nowrap">
-                    <button class="btn btn-sm btn-primary ">Ekle</button>
-                    <button class="btn btn-sm btn-primary ">Güncelle</button>
-                    <button class="btn btn-sm btn-primary ">Sil</button>
-                    <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
-                    <button class="btn btn-sm btn-primary ">
-                        Biometrik Fotoğraf Ekle
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Ayşe</td>
-                <td>Fatma</td>
-                <td>Demir</td>
-                <td>06.01.1987</td>
-                <td>TR</td>
-                <td>Pasaport</td>
-                <td>6543256</td>
-                <td>12.05.1995</td>
-            </tr><tr>
+                        <td class="text-center nowrap">
+                            <button class="btn btn-sm btn-primary ">Ekle</button>
+                            <button class="btn btn-sm btn-primary ">Güncelle</button>
+                            <button class="btn btn-sm btn-primary ">Sil</button>
+                            <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
+                            <button class="btn btn-sm btn-primary ">
+                                Biometrik Fotoğraf Ekle
+                            </button>
+                        </td>
+                        <td>1</td>
+                        <td>Ayşe</td>
+                        <td>Fatma</td>
+                        <td>Demir</td>
+                        <td>06.01.1987</td>
+                        <td>TR</td>
+                        <td>Pasaport</td>
+                        <td>6543256</td>
+                        <td>12.05.1995</td>
+                    </tr>
+                    <tr>
 
-                <td class="text-center nowrap">
-                    <button class="btn btn-sm btn-primary ">Ekle</button>
-                    <button class="btn btn-sm btn-primary ">Güncelle</button>
-                    <button class="btn btn-sm btn-primary ">Sil</button>
-                    <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
-                    <button class="btn btn-sm btn-primary ">
-                        Biometrik Fotoğraf Ekle
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Ayşe</td>
-                <td>Fatma</td>
-                <td>Demir</td>
-                <td>06.01.1987</td>
-                <td>TR</td>
-                <td>Pasaport</td>
-                <td>6543256</td>
-                <td>12.05.1995</td>
-            </tr><tr>
+                        <td class="text-center nowrap">
+                            <button class="btn btn-sm btn-primary ">Ekle</button>
+                            <button class="btn btn-sm btn-primary ">Güncelle</button>
+                            <button class="btn btn-sm btn-primary ">Sil</button>
+                            <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
+                            <button class="btn btn-sm btn-primary ">
+                                Biometrik Fotoğraf Ekle
+                            </button>
+                        </td>
+                        <td>1</td>
+                        <td>Ayşe</td>
+                        <td>Fatma</td>
+                        <td>Demir</td>
+                        <td>06.01.1987</td>
+                        <td>TR</td>
+                        <td>Pasaport</td>
+                        <td>6543256</td>
+                        <td>12.05.1995</td>
+                    </tr>
+                    <tr>
 
-                <td class="text-center nowrap">
-                    <button class="btn btn-sm btn-primary ">Ekle</button>
-                    <button class="btn btn-sm btn-primary ">Güncelle</button>
-                    <button class="btn btn-sm btn-primary ">Sil</button>
-                    <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
-                    <button class="btn btn-sm btn-primary ">
-                        Biometrik Fotoğraf Ekle
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Ayşe</td>
-                <td>Fatma</td>
-                <td>Demir</td>
-                <td>06.01.1987</td>
-                <td>TR</td>
-                <td>Pasaport</td>
-                <td>6543256</td>
-                <td>12.05.1995</td>
-            </tr><tr>
+                        <td class="text-center nowrap">
+                            <button class="btn btn-sm btn-primary ">Ekle</button>
+                            <button class="btn btn-sm btn-primary ">Güncelle</button>
+                            <button class="btn btn-sm btn-primary ">Sil</button>
+                            <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
+                            <button class="btn btn-sm btn-primary ">
+                                Biometrik Fotoğraf Ekle
+                            </button>
+                        </td>
+                        <td>1</td>
+                        <td>Ayşe</td>
+                        <td>Fatma</td>
+                        <td>Demir</td>
+                        <td>06.01.1987</td>
+                        <td>TR</td>
+                        <td>Pasaport</td>
+                        <td>6543256</td>
+                        <td>12.05.1995</td>
+                    </tr>
+                    <tr>
 
-                <td class="text-center nowrap">
-                    <button class="btn btn-sm btn-primary ">Ekle</button>
-                    <button class="btn btn-sm btn-primary ">Güncelle</button>
-                    <button class="btn btn-sm btn-primary ">Sil</button>
-                    <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
-                    <button class="btn btn-sm btn-primary ">
-                        Biometrik Fotoğraf Ekle
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Ayşe</td>
-                <td>Fatma</td>
-                <td>Demir</td>
-                <td>06.01.1987</td>
-                <td>TR</td>
-                <td>Pasaport</td>
-                <td>6543256</td>
-                <td>12.05.1995</td>
-            </tr>
+                        <td class="text-center nowrap">
+                            <button class="btn btn-sm btn-primary ">Ekle</button>
+                            <button class="btn btn-sm btn-primary ">Güncelle</button>
+                            <button class="btn btn-sm btn-primary ">Sil</button>
+                            <button class="btn btn-sm btn-primary ">Parmak İzi Ekle</button>
+                            <button class="btn btn-sm btn-primary ">
+                                Biometrik Fotoğraf Ekle
+                            </button>
+                        </td>
+                        <td>1</td>
+                        <td>Ayşe</td>
+                        <td>Fatma</td>
+                        <td>Demir</td>
+                        <td>06.01.1987</td>
+                        <td>TR</td>
+                        <td>Pasaport</td>
+                        <td>6543256</td>
+                        <td>12.05.1995</td>
+                    </tr>
 
-            </tbody>
-        </table>
-    </div>
-    <div class="row bg-light">
-        <div class="col">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#flat" role="tab" aria-controls="flat" aria-selected="true">Düz</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#rolled" role="tab" aria-controls="profile" aria-selected="false">Çevresiyle</a>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active finger-section" id="flat" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="row">
-                        <div class="col-1">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-                                <a class="nav-link active vertical-text" id="v-pills-home-tab" data-toggle="pill" href="#seperate" role="tab" aria-controls="v-pills-home" aria-selected="true">Tek tek</a>
-                                <a class="nav-link vertical-text" id="v-pills-profile-tab" data-toggle="pill" href="#group" role="tab" aria-controls="v-pills-profile" aria-selected="false">4-4-2</a>
-                            </div>
-                        </div>
-                        <div class="col-11">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="seperate" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                    <table class="table table-sm table-bordered">
-                                        <thead class="thead-dark">
-                                        <tr>
-                                            <th scope="col">Küçük</th>
-                                            <th scope="col">Yüzük</th>
-                                            <th scope="col">Orta</th>
-                                            <th scope="col">İşaret</th>
-                                            <th scope="col">Baş</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr class="table-info">
-                                            <td colspan="5"> Sağ</td>
-                                        </tr>
-                                        <tr class="table-warning">
-                                            <td class="text-success">Kalite: %95</td>
-                                            <td class="text-success">Kalite: %95</td>
-                                            <td class="text-success">Kalite: %95</td>
-                                            <td class="text-success">Kalite: %95</td>
-                                            <td class="text-success">Kalite: %95</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
-                                            </td>
-                                            <td>
-                                                <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
-                                            </td>
-                                            <td>
-                                                <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
-                                            </td>
-                                            <td>
-                                                <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
-                                            </td>
-                                            <td>
-                                                <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
-                                            </td>
-                                        </tr>
-                                        <tr class="table-info">
-                                            <td colspan="5"> Sol</td>
-                                        </tr>
-                                        <tr class="table-warning">
-                                            <td class="text-success">Kalite: %95</td>
-                                            <td class="text-success">Kalite: %95</td>
-                                            <td class="text-success">Kalite: %95</td>
-                                            <td class="text-success">Kalite: %95</td>
-                                            <td class="text-success">Kalite: %95</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
-                                            <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
-                                            <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
-                                            <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
-                                            <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                </tbody>
+            </table>
+        </div>
+        <div class="row bg-light">
+            <div class="col">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#flat" role="tab" aria-controls="flat" aria-selected="true">Düz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#rolled" role="tab" aria-controls="profile" aria-selected="false">Çevresiyle</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active finger-section" id="flat" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+                                    <a class="nav-link active vertical-text" id="v-pills-home-tab" data-toggle="pill" href="#seperate" role="tab" aria-controls="v-pills-home" aria-selected="true">Tek tek</a>
+                                    <a class="nav-link vertical-text" id="v-pills-profile-tab" data-toggle="pill" href="#group" role="tab" aria-controls="v-pills-profile" aria-selected="false">4-4-2</a>
                                 </div>
-                                <div class="tab-pane fade" id="group" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                    <div class="row">
-                                        <div class="col">
-                                            <label for="">Sol</label>
-                                            <img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt="">
-                                        </div>
-                                        <div class="col">
-                                            <label for="">Sağ</label>
-                                            <img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt="">
-                                        </div>
-                                        <div class="col">
-                                            <label for="">Baş</label>
-                                            <img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt="">
-                                        </div>
+                            </div>
+                            <div class="col-11">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="seperate" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <table class="table table-sm table-bordered">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Küçük</th>
+                                                    <th scope="col">Yüzük</th>
+                                                    <th scope="col">Orta</th>
+                                                    <th scope="col">İşaret</th>
+                                                    <th scope="col">Baş</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="table-info">
+                                                    <td colspan="5"> Sağ</td>
+                                                </tr>
+                                                <tr class="table-warning">
+                                                    <td class="text-success">Kalite: %95</td>
+                                                    <td class="text-success">Kalite: %95</td>
+                                                    <td class="text-success">Kalite: %95</td>
+                                                    <td class="text-success">Kalite: %95</td>
+                                                    <td class="text-success">Kalite: %95</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
+                                                    </td>
+                                                </tr>
+                                                <tr class="table-info">
+                                                    <td colspan="5"> Sol</td>
+                                                </tr>
+                                                <tr class="table-warning">
+                                                    <td class="text-success">Kalite: %95</td>
+                                                    <td class="text-success">Kalite: %95</td>
+                                                    <td class="text-success">Kalite: %95</td>
+                                                    <td class="text-success">Kalite: %95</td>
+                                                    <td class="text-success">Kalite: %95</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
+                                                    <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
+                                                    <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
+                                                    <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
+                                                    <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
+                                    <div class="tab-pane fade" id="group" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="">Sol</label>
+                                                <img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt="">
+                                            </div>
+                                            <div class="col">
+                                                <label for="">Sağ</label>
+                                                <img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt="">
+                                            </div>
+                                            <div class="col">
+                                                <label for="">Baş</label>
+                                                <img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt="">
+                                            </div>
+                                        </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade finger-section" id="rolled" role="tabpanel" aria-labelledby="profile-tab">
-                    <table class="table table-sm table-bordered">
-                        <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Küçük</th>
-                            <th scope="col">Yüzük</th>
-                            <th scope="col">Orta</th>
-                            <th scope="col">İşaret</th>
-                            <th scope="col">Baş</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr class="table-info">
-                            <td colspan="5"> Sağ</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
-                            </td>
-                            <td>
-                                <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
-                            </td>
-                            <td>
-                                <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
-                            </td>
-                            <td>
-                                <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
-                            </td>
-                            <td>
-                                <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
-                            </td>
-                        </tr>
-                        <tr class="table-info">
-                            <td colspan="5"> Sol</td>
-                        </tr>
-                        <tr>
-                            <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
-                            <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
-                            <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
-                            <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
-                            <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div class="tab-pane fade finger-section" id="rolled" role="tabpanel" aria-labelledby="profile-tab">
+                        <table class="table table-sm table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Küçük</th>
+                                    <th scope="col">Yüzük</th>
+                                    <th scope="col">Orta</th>
+                                    <th scope="col">İşaret</th>
+                                    <th scope="col">Baş</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-info">
+                                    <td colspan="5"> Sağ</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="https://images.unsplash.com/photo-1571054992190-2eaf20d15cfc" alt="">
+                                    </td>
+                                </tr>
+                                <tr class="table-info">
+                                    <td colspan="5"> Sol</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
+                                    <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
+                                    <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
+                                    <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
+                                    <td><img src="https://images.unsplash.com/photo-1570819782440-f7d16ec89cfc" alt=""></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="row align-items-center">
-                <div class="col"><img class="fill-image" src="https://images.unsplash.com/photo-1548260435-f3e7ec40e513" alt=""></div>
-                <div class="col"><img class="fill-image" src="https://www.docsketch.com/assets/vip-signatures/steve-jobs-signature-a2a0abd7defa5ba06d640c6fcc119db16bb3b3fb929e540c3712748545009d25.png" alt=""></div>
+            <div class="col">
+                <div class="row align-items-center">
+                    <div class="col"><img class="fill-image" src="https://images.unsplash.com/photo-1548260435-f3e7ec40e513" alt=""></div>
+                    <div class="col"><img class="fill-image" src="https://www.docsketch.com/assets/vip-signatures/steve-jobs-signature-a2a0abd7defa5ba06d640c6fcc119db16bb3b3fb929e540c3712748545009d25.png" alt=""></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script>
-    const electron = require("electron");
+    <script>
+        const electron = require("electron");
 
-    const {ipcRenderer} = electron;
+        const {
+            ipcRenderer
+        } = electron;
 
-    const btnAdd = document.getElementById("addFingerPrint");
-    btnAdd.addEventListener("click", () => {
+        const btnAdd = document.getElementById("addFingerPrint");
+        btnAdd.addEventListener("click", () => {
+            ipcRenderer.send("showAddWindow");
+        });
 
-        ipcRenderer.send("createWindow");
-
-    });
-
-</script>
+        const btnBioAdd = document.getElementById("showBioWindow");
+        btnBioAdd.addEventListener("click", () => {
+            ipcRenderer.send("showBioAddWindow");
+        });
+    </script>
 </body>
 
 </html>

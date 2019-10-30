@@ -7,18 +7,14 @@ if (require("electron-squirrel-startup")) {
 
 const createWindow = () => {
 	mainWindow = new BrowserWindow({
-		width: 700,
-		height: 500,
+		width: 1000,
+		height: 800,
 		webPreferences: {
 			nodeIntegration: true
-		},
-		frame: false,
-		resizable: false
+		}
 	});
 
 	mainWindow.loadURL(`file://${__dirname}/index.html`);
-
-	mainWindow.removeMenu();
 
 	mainWindow.on("closed", () => {
 		mainWindow = null;
@@ -28,21 +24,9 @@ const createWindow = () => {
 
 	Menu.setApplicationMenu(mainMenu);
 
-	ipcMain.on("key:btnClose", () => {
-		close();
+	ipcMain.on("createWindow", () => {
+		goAddWindow();
 	});
-
-	ipcMain.on("key:btnLogin", () => {
-		goHome();
-	});
-
-	ipcMain.on("showAddWindow", () => {
-		openAddWindow();
-    });
-    
-    ipcMain.on("showBioAddWindow", () => {
-        showAddBioWindow();
-    });
 };
 
 const mainMenuTemplate = [
@@ -89,59 +73,19 @@ app.on("activate", () => {
 	}
 });
 
-const close = () => {
-	app.quit();
-	mainWindow = null;
-};
+const goAddWindow = () => {
 
-const goHome = () => {
-	newPageWindow = new BrowserWindow({
-		width: 1366,
-		height: 768,
-		webPreferences: {
-			nodeIntegration: true
-		}
-	});
-
-    newPageWindow.loadURL(path.join(__dirname, "../Home/index.html"));
-    
-    newPageWindow.maximize();
-
-	newPageWindow.on("close", () => {
-		newPageWindow = null;
-	});
-};
-
-const openAddWindow = () => {
-	newPageWindow = new BrowserWindow({
-		width: 1366,
-		height: 768,
-		webPreferences: {
-			nodeIntegration: true
-		}
-	});
-
-	newPageWindow.loadURL(path.join(__dirname, "../Add/index.html"));
-
-	newPageWindow.maximize();
-
-	newPageWindow.on("close", () => {
-		newPageWindow = null;
-	});
-};
-
-const showAddBioWindow = () => {
     newPageWindow = new BrowserWindow({
-        width: 1366,
-        height: 768,
+        width: 1000,
+        height: 800,
         webPreferences: {
             nodeIntegration: true
         }
     });
 
-    newPageWindow.loadURL(path.join(__dirname, "../BiometricAdd/index.html"));
+    newPageWindow.loadURL(path.join(__dirname, "../Add/index.html"));
 
-    newPageWindow.maximize();
+	newPageWindow.maximize();
 
     newPageWindow.on("close", () => {
         newPageWindow = null;

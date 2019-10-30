@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biometric Fotoğraf</title>
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../../../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../assets/main.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        let $ = require('jquery');
+        require('popper.js');
+        require('bootstrap');
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row mt-1 mb-1">
+            <div class="col ">
+                <button id="btnChooseImage" class="btn btn-primary">Resim Seç</button>
+                <input type="file" hidden id="inputImage">
+                <button class="btn btn-primary">Tekrar Analiz Et</button>
+                <button class="btn btn-primary">Camera Görüntüsü</button>
+                <button class="btn btn-primary">Resmi Serileştir</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-light">
+                <img class="fill-image" style="max-height: 900px;" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="">
+            </div>
+            <div class="col bg-light">
+                <div class="row p-2 align-items-stretch">
+                    <div class="col">
+                        <label class="font-weight-bold" for="">Yüz</label>
+                        <img class="fill-image" style="max-height: 400px;" class="fill-image" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="">
+                    </div>
+                    <div class="col">
+                        <label class="font-weight-bold" for="">İmza</label>
+                        <img class="fill-image" src="https://www.docsketch.com/assets/vip-signatures/barack-obama-signature-b8614607575251b55f9386853536ef918f439600ccbda927b11aca9bf1d1842e.png" alt="">
+                    </div>
+                </div>
+                <div class="row p-2 bg-white">
+                    <div class="col border">
+                        <div class="row border align-content-between">
+                            <div class="col">
+                                <label class="font-weight-bold" for="">Yüz Detayları</label>
+                            </div>
+                            <div class="col d-flex justify-content-end align-items-baseline">
+                                <input name="ok" type="radio" disabled checked>
+                                <label for="ok" class="mr-3">Geçerli</label>
+                                <input type="radio" name="ok" disabled>
+                                <label for="notOk">Geçerli Değil</label>
+                            </div>
+                        </div>
+                        <ul class="checkList">
+                            <li>
+                                <input type="checkbox" name="yuz" disabled checked>
+                                <label for="yuz">Yüz</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="burun" disabled checked>
+                                <label for="burun">Yüz Bulanık Değil</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="burun" disabled checked>
+                                <label for="burun">Sol Göz</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="burun" disabled checked>
+                                <label for="burun">Sol Göz Açık</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="burun" disabled checked>
+                                <label for="burun">Sol Gözbebeği Bakış Açısı</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="burun" disabled checked>
+                                <label for="burun">Sol Gözbebeği Kırmızılık Yok</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="burun" disabled checked>
+                                <label for="burun">Sağ Göz</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="burun" disabled checked>
+                                <label for="burun">Sağ Göz Açık</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="burun" disabled checked>
+                                <label for="burun">Sağ Gözbebeği Bakış Açısı</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="burun" disabled checked>
+                                <label for="burun">Sağ Gözbebeği Kırmızılık Yok</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="burun" disabled checked>
+                                <label for="burun">Burun</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="burun" disabled checked>
+                                <label for="burun">Ağız</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="burun" disabled checked>
+                                <label for="burun">Ağız Kapalı</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btnChooseImage = document.getElementById("btnChooseImage");
+        btnChooseImage.addEventListener("click", () => {
+            document.getElementById("inputImage").click();
+        });
+
+        const electron = require("electron");
+
+        const {
+            ipcRenderer
+        } = electron;
+
+        /* const btnAdd = document.getElementById("addFingerPrint");
+        btnAdd.addEventListener("click", () => {
+
+            ipcRenderer.send("createWindow");
+
+        }); */
+    </script>
+</body>
+
+</html>
