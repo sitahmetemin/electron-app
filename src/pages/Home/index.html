@@ -337,18 +337,13 @@
 
 
         $(".addFingerPrint").click(() => {
-            ipcRenderer.send("showAddWindow");
+            ipcRenderer.send("openWindow", "Add");
         });
 
         $(".showBioWindow").click(() => {
-            ipcRenderer.send("showBioAddWindow");
+            ipcRenderer.send("openWindow", "BiometricAdd");
         });
-
-
-        /* const btnBioAdd = document.getElementsByClassName("showBioWindow");
-        btnBioAdd.addEventListener("click", () => {
-            
-        }); */
+        
     </script>
 </body>
 

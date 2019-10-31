@@ -180,21 +180,6 @@
 </div>
 
 <script>
-    
-    const electron = require("electron");
-    const remote = electron.remote;
-
-    const {ipcRenderer} = electron;
-
-    /* let btnAdd = document.getElementById("addFingerPrint");
-    btnAdd.addEventListener("click", () => {
-
-        let window = remote.getCurrentWindow();
-        ipcRenderer.send("openCreateWindow");
-        window.close();
-
-    }); */
-
     $('.selectable-finger').click(function(){
         removeAllClass('selectable-finger', "bg-primary");
         $(this).addClass("bg-primary");

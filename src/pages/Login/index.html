@@ -50,12 +50,12 @@
 
         let btnClose = document.getElementById("close");
         btnClose.addEventListener("click", () => {
-            ipcRenderer.send("key:btnClose")
+            ipcRenderer.send("closeApp")
         });
 
         let btnLogin = document.getElementById("btnLogin");
         btnLogin.addEventListener("click", () => {
-            ipcRenderer.send("key:btnLogin");
+            ipcRenderer.send("openWindow", "Home");
             var window = remote.getCurrentWindow();
             window.close();
         });
